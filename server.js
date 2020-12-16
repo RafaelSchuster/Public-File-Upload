@@ -29,6 +29,7 @@ app.post('/upload', upload.single('fileuploaded'), (req, res, next) => {
     fs.writeFile('./images.json', JSON.stringify(images, null, 2), (err, data) => {
         if (err) console.log('Errorrr');
     })
+    res.redirect('http://127.0.0.1:5500/photo-gallery/public/gallery.html')
     res.send('Done');
 });
 

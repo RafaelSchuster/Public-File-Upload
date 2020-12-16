@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../gallery.css">
 </head>
 
-<body>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
+<body class="body">
+    <h1 class="header-hp">Update your Pet's Image</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data" class="form-main">
         <input type="file" name="fileuploaded">
         <input type="text" name="caption">
-        <input type="submit" value="submit">
+        <input type="submit" value="submit"  >
     </form>
 </body>
 
