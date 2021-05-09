@@ -6,7 +6,6 @@ const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
 const images = require('./images.json');
-
 const storage = multer.diskStorage({
     destination: './uploads',
     filename: (req, file, cb) => {
